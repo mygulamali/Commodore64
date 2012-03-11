@@ -1,12 +1,10 @@
 <!doctype html>
 
 <!-- 
-320 and Up boilerplate extension
-Andy Clarke http://about.me/malarkey
-Keith Clark http://twitter.com/keithclarkcouk
-Version: 2
-URL: http://stuffandnonsense.co.uk/projects/320andup/
-License: http://creativecommons.org/licenses/MIT
+Commodore64 Theme
+Murtaza Gulamali http://www.gulamali.net/
+Version: 1.0.2
+License: http://creativecommons.org/licenses/by/3.0/
 -->
 
 <!--[if IEMobile 7]><html class="no-js iem7 oldie"><![endif]-->
@@ -20,13 +18,21 @@ License: http://creativecommons.org/licenses/MIT
 <meta charset="utf-8">
 
 <title>C64</title>
-<meta name="description" content="">
-<meta name="author" content="">
+<meta name="description" content="Commodore 64 themed website design.">
+<meta name="author" content="Murtaza Gulamali">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+
+<!-- The Commodore 64 font -->
+<style>
+@font-face {
+    font-family: "Commodore64";
+    src: url("fonts/C64_User_Mono_v1.0-STYLE.woff") format("woff");
+}
+</style>
 
 <!-- For all browsers -->
 <link rel="stylesheet/less" type="text/css" href="less/style.less">
@@ -73,21 +79,25 @@ License: http://creativecommons.org/licenses/MIT
 
 <body class="clearfix">
 
-<header role="banner">
-<h1></h1>
-</header>
-
-<div class="content clearfix">
-
-<div role="main">
+<div id="container">
+    <header role="banner">
+        <h1>**** COMMODORE 64 BASIC V2 ****</h1>
+        <h2>64K RAM SYSTEM&nbsp;&nbsp;38911 BASIC BYTES FREE</h2>
+        <div id="ready">READY.</div>
+        <div id="cursor">&nbsp;</div>
+    </header>
+    
+    <div class="content clearfix">
+        <div role="main">
+        </div>
+        
+        <div role="complementary">
+        </div>
+    </div>
+    
+    <footer role="contentinfo" class="clearfix">
+    </footer>
 </div>
-
-<div role="complementary">
-</div>
-</div>
-
-<footer role="contentinfo" class="clearfix">
-</footer>
 
 <!-- Scripts -->
 <script src="js/libs/jquery-1.6.2.min.js"></script>

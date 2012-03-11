@@ -48,18 +48,17 @@ display : inline-block;
 
 html {
 overflow-y : scroll;
-background : rgb(255,255,255); 
-//background : rgb(255,255,255) url(../img/tmp/grid.png) repeat-y 50% 0; 
-font-size : 62.5%; }
+background : @fgcol;
+font-size : 62.5%;}
 
 body { 
-margin : 0 auto;
-padding : 0;
+margin : 5% auto;
+padding : 1rem 0;
 width : 90%; /* 252px; */
-.font-size();
-.serif();
-color : rgb(40,40,40); 
-background-color : transparent; }
+.font-size(30);
+.c64();
+color : @fgcol; 
+background-color : @bgcol; }
 
 button, 
 input, 
@@ -76,18 +75,16 @@ h3,
 h4, 
 h5, 
 h6 {
-.sans-serif;
-font-weight : bold; }
+//font-weight : bold;
+}
 
 h1 { 
 margin-bottom : @baseline / 2;
-.font-size(48);
-line-height : 1.2; }
+line-height : 1.0; }
 
 h2 { 
 margin-bottom : @baseline / 2;
-.font-size(32);
-line-height : 1.2; }
+line-height : 1.0; }
 
 h3 { 
 margin-bottom : @baseline / 1.5;
@@ -479,3 +476,10 @@ visibility : hidden; }
 // webworkers
 
 /* 17 TEMPLATE SPECIFICS ============================================================================= */
+
+#container {
+    header {
+        h1, h2 { text-align: center; }
+        #cursor { background-color: @fgcol; width: 0.8em; }
+    }
+}
