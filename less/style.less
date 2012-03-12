@@ -52,10 +52,9 @@ background : @fgcol;
 font-size : 62.5%;}
 
 body { 
-margin : 5% auto;
 padding : 1rem 0;
+margin: 5% auto;
 width : 90%; /* 252px; */
-.font-size(30);
 .c64();
 color : @fgcol; 
 background-color : @bgcol; }
@@ -477,9 +476,7 @@ visibility : hidden; }
 
 /* 17 TEMPLATE SPECIFICS ============================================================================= */
 
-#container {
-    header {
-        h1, h2 { text-align: center; }
-        #cursor { background-color: @fgcol; width: 0.8em; }
-    }
+header {
+    padding: 0.5em 0;
+    #cursor { background-color: @fgcol; width: 1em; height: 1em; }
 }

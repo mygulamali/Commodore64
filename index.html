@@ -79,25 +79,23 @@ License: http://creativecommons.org/licenses/by/3.0/
 
 <body class="clearfix">
 
-<div id="container">
-    <header role="banner">
-        <h1>**** COMMODORE 64 BASIC V2 ****</h1>
-        <h2>64K RAM SYSTEM&nbsp;&nbsp;38911 BASIC BYTES FREE</h2>
-        <div id="ready">READY.</div>
-        <div id="cursor">&nbsp;</div>
-    </header>
-    
-    <div class="content clearfix">
-        <div role="main">
-        </div>
-        
-        <div role="complementary">
-        </div>
+<header role="banner">
+    <h1>&nbsp;&nbsp;&nbsp;&nbsp;****&nbsp;COMMODORE&nbsp;64&nbsp;BASIC&nbsp;V2&nbsp;****&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+    <h2>&nbsp;64K&nbsp;RAM&nbsp;SYSTEM&nbsp;&nbsp;38911&nbsp;BASIC&nbsp;BYTES&nbsp;FREE&nbsp;</h2>
+    <div id="ready">READY.</div>
+    <div id="cursor">&nbsp;</div>
+</header>
+
+<div class="content clearfix">
+    <div role="main">
     </div>
     
-    <footer role="contentinfo" class="clearfix">
-    </footer>
+    <div role="complementary">
+    </div>
 </div>
+
+<footer role="contentinfo" class="clearfix">
+</footer>
 
 <!-- Scripts -->
 <script src="js/libs/jquery-1.6.2.min.js"></script>
@@ -119,6 +117,25 @@ yepnope({
 	test : Modernizr.mq('(only all)'),
 	nope : ['js/libs/respond.min.js']
 });
+
+function cursor_blink() {
+    $('#cursor').animate({opacity: 0}, 'fast', 'swing').animate({opacity: 1}, 'fast', 'swing');
+}
+
+$(document).ready(function(){
+    setInterval('cursor_blink()', 800);
+    if ($(window).height()<$(window).width()) {
+        // landscape
+        $('body').height($(window).height()*0.8);
+        $('body').width($('body').height()*32/20);
+    } else {
+        // portrait
+        $('body').width($(window).width()*0.8);
+        $('body').height($('body').width()*20/32);
+    }
+    $('body').css('font-size',Math.round($('body').width()/40))
+});
+
 </script>
 
 <!-- http://mths.be/aab -->
