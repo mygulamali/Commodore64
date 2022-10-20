@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "Commodore64";
+    src: url("/assets/fonts/C64_User_Mono_v1.0-STYLE.eot");
+    src: url("/assets/fonts/C64_User_Mono_v1.0-STYLE.eot#iefix") format('embedded-opentype'),
+         url("/assets/fonts/C64_User_Mono_v1.0-STYLE.ttf") format('truetype'),
+         url("/assets/fonts/C64_User_Mono_v1.0-STYLE.woff")format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --bg-color: #3e32a2;
+    --fg-color: #7c71da;
+}
+
+html {
+    font-size: 1em;
+    background-color: var(--fg-color);
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Commodore64", "Monaco", "Courier New", monospace;
+    font-size: 62.5%;
+    padding: 1em 0;
+    margin: 5% auto;
+    width: 90%;
+    color: var(--fg-color);
+    background-color: var(--bg-color);
+}
