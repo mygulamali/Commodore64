@@ -2,10 +2,11 @@
 
 @font-face {
     font-family: "Commodore64";
-    src: url("/assets/fonts/C64_User_Mono_v1.0-STYLE.eot");
-    src: url("/assets/fonts/C64_User_Mono_v1.0-STYLE.eot#iefix") format('embedded-opentype'),
-         url("/assets/fonts/C64_User_Mono_v1.0-STYLE.ttf") format('truetype'),
-         url("/assets/fonts/C64_User_Mono_v1.0-STYLE.woff")format('woff');
+    src: url("/assets/fonts/C64_Pro_Mono-STYLE.eot");
+    src: url("/assets/fonts/C64_Pro_Mono-STYLE.eot#iefix") format('embedded-opentype'),
+         url("/assets/fonts/C64_Pro_Mono-STYLE.ttf") format('truetype'),
+         url("/assets/fonts/C64_Pro_Mono-STYLE.woff")format('woff'),
+         url("/assets/fonts/C64_Pro_Mono-STYLE.woff2")format('woff2');
     font-weight: normal;
     font-style: normal;
 }
